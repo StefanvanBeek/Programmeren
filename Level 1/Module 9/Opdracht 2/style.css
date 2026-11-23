@@ -1,0 +1,34 @@
+.bord {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+}
+
+.vak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+.vak:nth-child(16n + 2),
+.vak:nth-child(16n + 4),
+.vak:nth-child(16n + 6),
+.vak:nth-child(16n + 8),
+.vak:nth-child(16n + 9),
+.vak:nth-child(16n + 11),
+.vak:nth-child(16n + 13),
+.vak:nth-child(16n + 15) {
+    background-color: #b58863;
+}
+
+.vak:nth-child(16n + 1),
+.vak:nth-child(16n + 3),
+.vak:nth-child(16n + 5),
+.vak:nth-child(16n + 7),
+.vak:nth-child(16n + 10),
+.vak:nth-child(16n + 12),
+.vak:nth-child(16n + 14),
+.vak:nth-child(16n + 16) {
+    background-color: #f0d9b5;
+}

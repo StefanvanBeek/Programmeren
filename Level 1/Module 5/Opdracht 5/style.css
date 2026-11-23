@@ -1,0 +1,15 @@
+section p{
+    background-color: lightblue;
+}
+
+section > p{
+    background-color: lightgreen;
+}
+
+h2 + p{
+    background-color: gold;
+}
+
+div ~ p{
+    background-color: salmon;
+}

@@ -1,0 +1,139 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e9e9e9;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 25px;
+}
+
+.pagina {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer";
+
+    grid-template-columns: 275px 1fr;
+    grid-template-rows: auto 1fr auto;
+
+    gap: 15px;
+    min-height: 90vh;
+}
+
+
+/*Header*/
+header {
+    grid-area: header;
+
+    background: #34349d;
+    color: white;
+
+    padding: 25px 35px;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+
+    background: #d42bc7;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 32px;
+    font-weight: bold;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #d8d8d8;
+}
+
+
+/*nav*/
+nav {
+    grid-area: nav;
+
+    background: #21217c;
+    color: white;
+
+    padding: 25px;
+    border-radius: 12px;
+}
+
+nav h2 {
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav p {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    font-size: 1.2rem;
+}
+
+
+/*Main*/
+main {
+    grid-area: main;
+
+    background: #f2f2f2;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+main h2 {
+    color: #34349d;
+    margin-bottom: 20px;
+}
+
+
+.projecten-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.project {
+    background: #e5e7f3;
+    padding: 15px;
+
+    border-left: 4px solid #34349d;
+    border-radius: 5px;
+}
+
+.project h3 {
+    color: #34349d;
+    margin-bottom: 8px;
+}
+
+
+/*footer*/
+footer {
+    grid-area: footer;
+
+    background: #34349d;
+    color: white;
+
+    text-align: center;
+    padding: 15px;
+    border-radius: 12px;
+}

@@ -1,0 +1,32 @@
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid transparent;
+}
+
+.btn-succes {
+  background-color: #4caf50;
+  color: white;
+  border-color: #3e8e41;
+}
+
+.btn-gevaar {
+  background-color: #f44336;
+  color: white;
+  border-color: #d32f2f;
+}
+
+.btn-waarschuwing {
+  background-color: #ff9800;
+  color: black;
+  border-color: #e68900;
+}
+
+.btn-uitgeschakeld {
+  background-color: #cccccc;
+  color: #666666;
+  border-color: #999999;
+  cursor: not-allowed;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selector test</title>
+  <style>
+    /* Opdracht 1: body margin 10px, achtergrond #eff7d0, lettertype Arial */
+    body {
+      margin: 10px;
+      background-color: #eff7d0;
+      font-family: Arial;
+    }
+
+    nav {
+      background-color: rgb(215, 200, 200);
+      padding: 2%;
+    }
+
+    nav>div {
+      display: inline-block;
+      width: 300px;
+      margin-right: 2%
+    }
+
+    main>h2 {
+      color: red;
+    }
+
+    article h2 {
+      text-decoration: underline;
+    }
+
+    article:nth-of-type(1) h2,
+    article:nth-of-type(3) h2 {
+      color: green;
+    }
+
+    article:nth-of-type(2) h2,
+    article:nth-of-type(4) h2 {
+      color: yellow;
+    }
+
+    article:nth-of-type(3) {
+      border: 1px;
+      border-radius: 10px;
+      padding: 2%;
+      background-color: #333;
+      color: #FFFFFF;
+    }
+
+    article:last-of-type {
+      border-bottom: 5px solid gray;
+    }
+
+    main~div {
+      font-style: italic;
+      font-size: 0.7em;
+    }
+
+    footer {
+      font-family: Arial;
+      font-size: 8px;
+      border-top: 1px solid gray;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div><a href="#">item 1</a></div>
+      <div><a href="#">item 2</a></div>
+      <div><a href="#">item 3</a></div>
+      <hr>
+    </nav>
+  </header>
+  <main>
+    <h2>Deze tekst wordt rood</h2>
+    <div>wij wensen je veel leesplezier</div>
+    <section>
+      <article>
+        <h2>1e artikel</h2>
+        <p>Inhoud 1e artikel</p>
+      </article>
+      <article>
+        <h2>2e artikel</h2>
+        <p>Inhoud 2e artikel</p>
+      </article>
+      <article>
+        <h2>3e artikel</h2>
+        <p>Inhoud 3e artikel</p>
+      </article>
+      <article>
+        <h2>4e artikel</h2>
+        <p>Inhoud 4e artikel</p>
+      </article>
+    </section>
+  </main>
+  <div>auteur: J.Johnson</div>
+  <div>plaats: Amersfoort</div>
+  <footer>
+    <div>Copyright 2025–2026, ICT College</div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selector test</title>
+  <style>
+    /* Opdracht 1: body margin 10px, achtergrond #eff7d0, lettertype Arial */
+    body { margin: 10px; background-color: #eff7d0; font-family: Arial; }
+
+    /* Opdracht 2: nav achtergrond rgb(215,200,200), padding 2% rondom */
+    nav {
+      background-color: rgb(215, 200, 200);
+      padding: 2%;
+    }
+    /* Opdracht 3: div onder nav → display:inline-block, breedte 300px, rechtermarge 2% */
+
+    nav > div {
+      display: inline-block;
+      width: 300px;
+      margin-right: 2%;
+    }
+    /* Opdracht 4: h2 als directe child van main → rood */
+    main > h2 {
+      color: red
+    }
+    /* Opdracht 5: alle h2 onder article → onderstreept, om en om groen en geel */
+    article h2 {
+      text-decoration: underline;
+    }
+
+    article:nth-child(odd) h2{
+      color: green;
+    }
+
+    article:nth-child(even) h2{
+      color: yellow;
+    }
+    /* Opdracht 6: derde article → border 1px solid black, border-radius 10px,
+       padding 2%, achtergrond #333, tekstkleur wit */
+       article:nth-child(3) {
+        border: 1px;
+        border-radius: 10px;
+        padding: 2%;
+        background-color: #333;
+        color: white;
+       }
+
+    /* Opdracht 7: grijze border van 5px onder het laatste article */
+    article:last-child {
+      border-bottom: 5px solid grey;
+    }
+    /* Opdracht 8: alle div na main → cursief, font-size 0.7em */
+    main~div {
+      font-style: italic;
+      font-size: 0.7em;
+    }
+
+    /* Opdracht 9: footer → Arial 8px, grijze solid border van 1px boven footer */
+    footer{
+      font-family: Arial;
+      font-size: 8px;
+      border-top: 1px solid gray;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><a href="#">item 1</a></div>
+      <div><a href="#">item 2</a></div>
+      <div><a href="#">item 3</a></div>
+      <hr>
+    </nav>
+  </header>
+  <main>
+    <h2>Deze tekst wordt rood</h2>
+    <div>wij wensen je veel leesplezier</div>
+    <section>
+      <article><h2>1e artikel</h2><p>Inhoud 1e artikel</p></article>
+      <article><h2>2e artikel</h2><p>Inhoud 2e artikel</p></article>
+      <article><h2>3e artikel</h2><p>Inhoud 3e artikel</p></article>
+      <article><h2>4e artikel</h2><p>Inhoud 4e artikel</p></article>
+    </section>
+  </main>
+  <div>auteur: J.Johnson</div>
+  <div>plaats: Amersfoort</div>
+  <footer><div>Copyright 2025–2026, ICT College</div></footer>
+</body>
+</html>

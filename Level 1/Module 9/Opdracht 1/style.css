@@ -1,0 +1,44 @@
+.container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 120px 120px 120px;
+    gap: 20px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.item:nth-child(1) {
+  grid-column: 1 / 2; /* Start bij lijn 1, eindig vóór lijn 3 */
+}
+
+.item {
+    background-color: blue;
+}
+
+.item2 {
+    background-color: red;
+}
+
+.item3 {
+    background-color: yellow;
+}
+
+.item4 {
+    background-color: purple;
+}
+
+.item5 {
+    background-color: pink;
+}
+
+.item6 {
+    background-color: green;
+}
+
+.item7 {
+    background-color: orange;
+}
+
+.item8 {
+    background-color: cyan;
+}
