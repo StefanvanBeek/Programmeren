@@ -1,0 +1,5 @@
+1. let, gebruikersnaam verandert
+2. const, Pi kan niet veranderen
+3. let, teller gaat telkens 1 omhoog
+4. const, het huidige jaar verandert niet in het programma
+5. let, de score verandert vaak
